@@ -1,0 +1,75 @@
+<html>
+
+<head>
+    <title>
+        Pelton turbine
+    </title>
+</head>
+
+<body>
+    <p>
+        <label for="discharge">Discharge(Q):</label>
+        <input type="number" id="discharge" class="paramClass"> m<sup>3</sup>/s
+    </p>
+
+    <p>
+        <label for="nethead">Net head(H):</label>
+        <input type="number" id="nethead" class="paramClass"> m
+    </p>
+
+    <p>
+        <label for="jetratio">Jet ratio(m):</label>
+        <input type="number" id="jetratio" min=7 max=26 value="12" class="paramClass"> m
+    </p>
+
+    <p>
+        <label for="coeffvelocity">Coefficient of velocity(c<sub>v</sub>):</label>
+        <input type="number" id="coeffvelocity" min=0.97 max=0.99 value="0.98" step="0.01" class="paramClass">
+    </p>
+
+    <p>
+        <label for="speedratio">Speed ratio(k<sub>u</sub>):</label>
+        <input type="number" id="speedratio" min=0.43 max=0.47 value="0.45" step="0.01" class="paramClass">
+    </p>
+
+    <p>
+        <label for="numnozzles">Number of nozzles(Z):</label>
+        <input type="number" id="numnozzles" min=1 max=7 value="1" class="paramClass">
+    </p>
+
+    <p>
+        <label for="frequency">Frequency(f):</label>
+        <input type="number" id="frequency" value="50" class="paramClass"> Hz
+    </p>
+
+    <hr>
+
+    <p>
+        Jet diameter(d): <span id="d"></span>
+    </p>
+
+    <p>
+        Runner diameter(D): <span id="D"></span>
+    </p>
+
+    <p>
+        Jet ratio(m): <span id="m"></span>
+    </p>
+
+    <p>
+        Synchronous speed(N<sub>syn</sub>): <span id="N"></span>
+    </p>
+
+    <p>
+        Number of poles(P): <span id="P"></span>
+    </p>
+
+    <p>
+        Number of buckets(Z): <span id="Z"></span>
+    </p>
+        
+
+    <script src="./pelton.js"></script>
+</body>
+
+</html>

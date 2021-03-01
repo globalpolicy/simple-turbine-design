@@ -1,0 +1,94 @@
+<html>
+
+<head>
+    <title>
+        Francis turbine
+    </title>
+</head>
+
+<body>
+    <p>
+        <label for="discharge">Discharge(Q):</label>
+        <input type="number" id="discharge" class="paramClass"> m<sup>3</sup>/s
+    </p>
+
+    <p>
+        <label for="nethead">Net head(H):</label>
+        <input type="number" id="nethead" class="paramClass"> m
+    </p>
+
+    <p>
+        <label for="beta2">Runner blade angle at outlet(β<sub>2</sub>):</label>
+        <input type="number" id="beta2" class="paramClass" value="17" min="13" max="23"> degrees
+    </p>
+
+    <p>
+        <label for="u2">Runner speed at outlet(u<sub>2</sub>):</label>
+        <input type="number" id="u2" class="paramClass" value="41" min="35" max="43"> m/s
+    </p>
+
+    <p>
+        <label for="u1_">Dimensionless runner speed at inlet(<u>u<sub>1</sub></u>):</label>
+        <input type="number" id="u1_" class="paramClass" value="0.73" min="0.70" max="0.75" step="0.01">
+    </p>
+
+
+    <p>
+        <label for="frequency">Frequency(f):</label>
+        <input type="number" id="frequency" value="50" class="paramClass"> Hz
+    </p>
+
+    <p>
+        <label for="flowVelocityFactor">Flow velocity multiplier (v<sub>f2</sub>=k.v<sub>f1</sub>):</label>
+        <input type="number" id="flowVelocityFactor" value="1.1" class="paramClass" step="0.1">
+    </p>
+
+    <p>
+        <label for="maxHydraulicEfficiency">Max hydraulic efficiency at BEP (η<sub>h</sub>):</label>
+        <input type="number" id="maxHydraulicEfficiency" value="0.96" class="paramClass" max="1.00" step="0.01">
+    </p>
+    
+    <hr>
+
+
+
+    <p>
+        Synchronous speed(N<sub>syn</sub>): <span id="N"></span>
+    </p>
+
+    <p>
+        Number of poles(P): <span id="P"></span>
+    </p>
+
+
+    <p>
+        Height at inlet(B): <span id="B"></span>
+    </p>
+
+
+    <p>
+        Runner diameter at inlet(D<sub>1</sub>): <span id="D1"></span>
+    </p>
+
+
+    <p>
+        Runner diameter at outlet(D<sub>2</sub>): <span id="D2"></span>
+    </p>
+
+
+    <p>
+        Runner blade angle at inlet(β<sub>1</sub>): <span id="beta1"></span>
+    </p>
+
+    <p>
+        Guide vane angle at inlet(α<sub>1</sub>): <span id="alpha1"></span>
+    </p>
+
+    <p>
+        Net Positive Suction Head required(NPSH<sub>R</sub>): <span id="npsh"></span>
+    </p>
+
+    <script src="./francis.js"></script>
+</body>
+
+</html>
